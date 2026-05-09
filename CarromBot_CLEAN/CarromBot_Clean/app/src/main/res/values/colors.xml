@@ -1,0 +1,27 @@
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;resources&gt;
+    &lt;!-- Primary Colors --&gt;
+    &lt;color name="background"&gt;#0f0f1e&lt;/color&gt;
+    &lt;color name="surface"&gt;#1a1a2e&lt;/color&gt;
+    &lt;color name="text_primary"&gt;#ffffff&lt;/color&gt;
+    &lt;color name="text_secondary"&gt;#b0b0b0&lt;/color&gt;
+
+    &lt;!-- Accent Colors --&gt;
+    &lt;color name="accent_blue"&gt;#00d4ff&lt;/color&gt;
+    &lt;color name="accent_green"&gt;#00ff88&lt;/color&gt;
+    &lt;color name="accent_orange"&gt;#ff6400&lt;/color&gt;
+    &lt;color name="accent_red"&gt;#ff4444&lt;/color&gt;
+
+    &lt;!-- Status Colors --&gt;
+    &lt;color name="active_green"&gt;#00ff88&lt;/color&gt;
+    &lt;color name="inactive_red"&gt;#ff4444&lt;/color&gt;
+    &lt;color name="warning_orange"&gt;#ffaa00&lt;/color&gt;
+
+    &lt;!-- Overlay Colors --&gt;
+    &lt;color name="overlay_background"&gt;#1a1a2e&lt;/color&gt;
+    &lt;color name="overlay_header"&gt;#0f3460&lt;/color&gt;
+
+    &lt;!-- White --&gt;
+    &lt;color name="white"&gt;#ffffff&lt;/color&gt;
+
+&lt;/resources&gt;

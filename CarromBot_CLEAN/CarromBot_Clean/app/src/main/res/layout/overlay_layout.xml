@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/overlay_background"
+    android:padding="10dp">
+
+    <!-- Header (Draggable) -->
+    <LinearLayout
+        android:id="@+id/overlayHeader"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/overlay_header"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🎯 Carrom AI"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:paddingLeft="10dp" />
+
+        <Button
+            android:id="@+id/collapseBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="−"
+            android:textSize="16sp"
+            android:background="@drawable/icon_button_background"
+            android:textColor="@color/white"
+            android:padding="0dp" />
+
+    </LinearLayout>
+
+    <!-- Content -->
+    <LinearLayout
+        android:id="@+id/overlayContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <!-- Angle Indicator -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/stat_card_background"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STRIKE ANGLE"
+                android:textSize="11sp"
+                android:textColor="@color/text_secondary"
+                android:alpha="0.7" />
+
+            <TextView
+                android:id="@+id/overlayAngle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="45°"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="@color/accent_orange"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+
+        <!-- Power Indicator -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/stat_card_background"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STRIKE POWER"
+                android:textSize="11sp"
+                android:textColor="@color/text_secondary"
+                android:alpha="0.7" />
+
+            <TextView
+                android:id="@+id/overlayPower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="75%"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="@color/accent_green"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+
+        <!-- Accuracy -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/stat_card_background"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PREDICTION"
+                android:textSize="11sp"
+                android:textColor="@color/text_secondary"
+                android:alpha="0.7" />
+
+            <TextView
+                android:id="@+id/overlayAccuracy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="READY"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/accent_blue"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+
+        <!-- Quick Shot Button -->
+        <Button
+            android:id="@+id/quickShotBtn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="⚡ EXECUTE SHOT"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="@drawable/action_button_background"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Settings -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/settings_card_background"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⚙️ Settings"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Smart Mode"
+                    android:textSize="11sp"
+                    android:textColor="@color/text_secondary" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Debug Mode"
+                    android:textSize="11sp"
+                    android:textColor="@color/text_secondary" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
